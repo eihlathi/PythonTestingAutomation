@@ -1,0 +1,12 @@
+﻿Adding Entity Framework
+-----------------------
+
+1. Install NuGet packages for EntityFramework:
+
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Tools
+- Microsoft.EntityFrameworkCore.SqlServer
+
+2. Scaffold the database:
+
+Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=ContactManager;Trusted_Connection=True;Encrypt=false;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

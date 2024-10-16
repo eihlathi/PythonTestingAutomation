@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.4 on win32)" generated="2024-10-02T11:00:27.046384" rpa="false" schemaversion="5">
+<suite id="s1" name="MyFirstTest" source="C:\Academy\Code &amp; AI\Code\Robot\MyFirstTest.robot">
+<test id="s1-t1" name="Test Sum Of Two Numbers" line="9">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-10-02T11:00:27.074313" level="INFO">${a} = 3</msg>
+<var>${a}</var>
+<arg>${NUM1}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-10-02T11:00:27.074313" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-10-02T11:00:27.075332" level="INFO">${b} = 4</msg>
+<var>${b}</var>
+<arg>${NUM2}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-10-02T11:00:27.075332" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-10-02T11:00:27.075332" level="INFO">${expected} = 7</msg>
+<var>${expected}</var>
+<arg>7</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-10-02T11:00:27.075332" elapsed="0.000000"/>
+</kw>
+<kw name="Sum" owner="calculator">
+<msg time="2024-10-02T11:00:27.076314" level="INFO">${result} = 7</msg>
+<var>${result}</var>
+<arg>${a}</arg>
+<arg>${b}</arg>
+<status status="PASS" start="2024-10-02T11:00:27.076314" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-02T11:00:27.076314" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:00:27.073314" elapsed="0.003000"/>
+</test>
+<test id="s1-t2" name="Test Product Of Two Numbers" line="17">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-10-02T11:00:27.077314" level="INFO">${a} = 3</msg>
+<var>${a}</var>
+<arg>${NUM1}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-10-02T11:00:27.077314" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-10-02T11:00:27.078312" level="INFO">${b} = 4</msg>
+<var>${b}</var>
+<arg>${NUM2}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-10-02T11:00:27.078312" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2024-10-02T11:00:27.078312" level="INFO">${expected} = 12</msg>
+<var>${expected}</var>
+<arg>12</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2024-10-02T11:00:27.078312" elapsed="0.000000"/>
+</kw>
+<kw name="Product" owner="calculator">
+<msg time="2024-10-02T11:00:27.078312" level="INFO">${result} = 12</msg>
+<var>${result}</var>
+<arg>${a}</arg>
+<arg>${b}</arg>
+<status status="PASS" start="2024-10-02T11:00:27.078312" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-02T11:00:27.079319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-02T11:00:27.077314" elapsed="0.002005"/>
+</test>
+<status status="PASS" start="2024-10-02T11:00:27.048410" elapsed="0.030909"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="MyFirstTest">MyFirstTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

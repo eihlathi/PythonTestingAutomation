@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fetch API Demo with JSONPlaceholder.com users</title>
+</head>
+
+<body>
+    <h1>Fetch API Demo</h1>
+
+    <button onclick="getListOfUser()">Read users</button>
+
+    <table style="border: 1px solid black; margin-top: 30px;">
+        <tbody id="myUserTableBody">
+        </tbody>
+    </table>
+
+    <script>
+        function getListOfUser() {
+            console.log("Starting to fetch user data.");
+            fetch('https://jsonplaceholder.typicode.com/users')
+                .then(response => response.json())
+                .then(json => {
+                    console.log(json);
+
+                    // populate an HTML table dynamically
+                    // let myTable = document.createElement("table");
+                    // document.appendChild(myTable);
+
+                    let myTableBody = document.getElementById("myUserTableBody");
+
+                    for (let i = 0; i < json.length; i++) {
+                        const user = json[i];
+
+                        let row = document.createElement("tr");
+                        let cell1 = document.createElement("td");
+                        let cell2 = document.createElement("td");
+
+                        let text1 = document.createTextNode(user.name);
+                        let text2 = document.createTextNode(user.email);
+
+                        // connect the elements
+                        cell1.appendChild(text1);
+                        cell2.appendChild(text2);
+
+                        row.appendChild(cell1);
+                        row.appendChild(cell2);
+
+                        myTableBody.appendChild(row);
+                    }
+                });
+            console.log("Fetch API call has been made.");
+        }
+    </script>
+</body>
+
+</html>

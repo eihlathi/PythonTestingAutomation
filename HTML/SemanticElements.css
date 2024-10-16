@@ -1,0 +1,10 @@
+aside {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    float: right;
+}
+
+address {
+    font-weight: bold;
+}
